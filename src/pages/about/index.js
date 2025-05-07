@@ -25,7 +25,7 @@ export const About = () => {
             <hr className="t_border my-4 ml-0 text-left" />
           </Col>
           <Col lg="4" className="d-flex justify-content-end align-items-center">
-            <a href="/single page cv1.pdf" download className="ac_btn btn">
+            <a href="/singlePageCV.pdf" download className="ac_btn btn">
               Download Resume
               <div className="ring one"></div>
               <div className="ring two"></div>

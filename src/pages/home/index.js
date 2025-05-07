@@ -56,7 +56,7 @@ export const Home = () => {
                       <div className="ring three"></div>
                     </div>
                   </Link>
-                  <a href="/single page cv1.pdf" download>
+                  <a href="/singlePageCV.pdf" download>
                     <Button className="ac_btn">
                       Download Resume
                     </Button>
