@@ -70,6 +70,47 @@
     padding-bottom: 4px;
 }
 
+.work-experience {
+    padding: 10px 0;
+}
+
+.work-experience .company-name {
+    font-weight: 600;
+    color: #2d343e;
+    margin-bottom: 5px;
+    font-size: 1.1em;
+}
+
+.work-experience .date-location {
+    margin-bottom: 8px;
+    color: #666;
+    font-size: 0.9em;
+}
+
+.work-experience .date {
+    font-weight: 500;
+    margin-right: 15px;
+}
+
+.work-experience .location {
+    color: #888;
+}
+
+.work-experience .description {
+    line-height: 1.6;
+    color: #333;
+}
+
+.table th {
+    min-width: 150px;
+    vertical-align: top;
+    padding-top: 15px;
+}
+
+.table td {
+    vertical-align: top;
+    padding-top: 15px;
+}
 
 /*! CSS Used keyframes */
 
@@ -96,5 +137,40 @@
         opacity: 1;
         -webkit-transform: translateZ(0);
         transform: translateZ(0);
+    }
+}
+
+.ac_btn {
+    padding: 0.7rem 1.5rem;
+    border: 2px solid var(--text-color);
+    border-radius: 30px;
+    text-decoration: none;
+    color: var(--text-color);
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 14px;
+    display: inline-block;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+}
+
+#button_r {
+    padding: 0.7rem 1.5rem;
+    margin-left: 0;
+    min-width: 150px;
+    text-align: center;
+}
+
+.ac_btn:hover {
+    color: var(--bg-color);
+    background-color: var(--text-color);
+}
+
+@media (max-width: 768px) {
+    .ac_btn {
+        padding: 0.5rem 1.2rem;
+        font-size: 13px;
     }
 }

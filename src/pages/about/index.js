@@ -24,6 +24,14 @@ export const About = () => {
             <h1 className="display-4 mb-4">About me</h1>
             <hr className="t_border my-4 ml-0 text-left" />
           </Col>
+          <Col lg="4" className="d-flex justify-content-end align-items-center">
+            <a href="/single page cv1.pdf" download className="ac_btn btn">
+              Download Resume
+              <div className="ring one"></div>
+              <div className="ring two"></div>
+              <div className="ring three"></div>
+            </a>
+          </Col>
         </Row>
         <Row className="sec_sp">
           <Col lg="5">
@@ -37,7 +45,7 @@ export const About = () => {
         </Row>
         <Row className=" sec_sp">
           <Col lg="5">
-            <h3 className="color_sec py-4">Work Timline</h3>
+            <h3 className="color_sec py-4">Work Experience</h3>
           </Col>
           <Col lg="7">
             <table className="table caption-top">
@@ -46,8 +54,16 @@ export const About = () => {
                   return (
                     <tr key={i}>
                       <th scope="row">{data.jobtitle}</th>
-                      <td>{data.where}</td>
-                      <td>{data.date}</td>
+                      <td>
+                        <div className="work-experience">
+                          <div className="company-name">{data.where}</div>
+                          <div className="date-location">
+                            <span className="date">{data.date}</span>
+                            <span className="location">{data.location}</span>
+                          </div>
+                          <div className="description">{data.description}</div>
+                        </div>
+                      </td>
                     </tr>
                   );
                 })}
